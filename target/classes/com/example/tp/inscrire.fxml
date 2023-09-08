@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="266.0" prefWidth="474.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tp.InscrireController">
+   <children>
+      <Button fx:id="validerbutton" layoutX="323.0" layoutY="218.0" mnemonicParsing="false" onAction="#ValiderNouveauPseudo" text="Valider" />
+      <Button fx:id="retourButton" layoutX="404.0" layoutY="218.0" mnemonicParsing="false" onAction="#NoButtonAction" text="Retour" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="153.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Entrez le nouvel utilisateur ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <TextField fx:id="new_pseudo" layoutX="125.0" layoutY="120.0" prefHeight="25.0" prefWidth="225.0" />
+      <Text layoutX="125.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom d'utilisateur :" />
+      <Label fx:id="errorlabel" layoutX="147.0" layoutY="177.0" prefHeight="18.0" prefWidth="182.0" textFill="RED" />
+   </children>
+</AnchorPane>

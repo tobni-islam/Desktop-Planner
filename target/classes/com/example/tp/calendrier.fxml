@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #f2fafc;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tp.CalendrierController">
+    <FlowPane fx:id="calendar" hgap="0.0" layoutX="186.0" layoutY="86.0" prefHeight="276.0" prefWidth="566.0" vgap="0.0" />
+    <HBox alignment="CENTER" layoutX="226.0" prefHeight="44.0" prefWidth="419.0" spacing="5.0">
+        <children>
+            <Button mnemonicParsing="false" onAction="#backOneMonth" style="-fx-background-color: #FFA500; -fx-background-radius: 20;" text="&lt;" textFill="WHITE" />
+            <Text fx:id="year" strokeType="OUTSIDE" strokeWidth="0.0" text="####">
+                <font>
+                    <Font name="Arial" size="18.0" />
+                </font>
+            </Text>
+            <Text fx:id="month" strokeType="OUTSIDE" strokeWidth="0.0" text="####">
+                <font>
+                    <Font name="Arial" size="18.0" />
+                </font>
+            </Text>
+            <Button mnemonicParsing="false" onAction="#forwardOneMonth" style="-fx-background-color: #FFA500; -fx-background-radius: 20;" text="&gt;" textFill="WHITE" />
+        </children>
+    </HBox>
+    <HBox alignment="CENTER" layoutX="186.0" layoutY="48.0" prefHeight="38.0" prefWidth="499.0" spacing="60.0" style="-fx-background-color: #7B3F7F;">
+        <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Su" textAlignment="CENTER" />
+            <Text fill="WHITE" layoutX="213.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mo" textAlignment="CENTER" />
+            <Text fill="WHITE" layoutX="222.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tu" textAlignment="CENTER" />
+            <Text fill="WHITE" layoutX="232.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="We" textAlignment="CENTER" />
+            <Text fill="WHITE" layoutX="241.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Th" textAlignment="CENTER" />
+            <Text fill="WHITE" layoutX="251.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fr" textAlignment="CENTER" />
+            <Text fill="WHITE" layoutX="266.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sa" textAlignment="CENTER" />
+        </children>
+    </HBox>
+   <Pane layoutX="14.0" layoutY="27.0" prefHeight="452.0" prefWidth="163.0" style="-fx-background-color: #f2fafc; -fx-background-radius: 0;">
+      <children>
+         <Button fx:id="ajoutertache" layoutX="4.0" layoutY="21.0" mnemonicParsing="false" onAction="#openTache" prefHeight="66.0" prefWidth="155.0" style="-fx-background-color: #FFA500; -fx-background-radius: 0; -fx-border-color: white;" text="Ajouter Une Tache" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font>
+         </Button>
+         <Button fx:id="proposer" layoutX="4.0" layoutY="83.0" mnemonicParsing="false" onAction="#openAutomatique" prefHeight="66.0" prefWidth="155.0" style="-fx-background-color: #FFA500; -fx-background-radius: 0; -fx-border-color: white;" text="Proposer Un Planning" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font>
+         </Button>
+         <Button fx:id="replanifier" layoutX="4.0" layoutY="150.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="155.0" style="-fx-background-color: #FFA500; -fx-background-radius: 0; -fx-border-color: white;" text="Replanifier" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font>
+         </Button>
+         <Button fx:id="etat" layoutX="4.0" layoutY="209.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="155.0" style="-fx-background-color: #FFA500; -fx-background-radius: 0; -fx-border-color: white;" text="Etat De Realisation" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font>
+         </Button>
+         <Button fx:id="statistiques" layoutX="4.0" layoutY="267.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="155.0" style="-fx-background-color: #FFA500; -fx-background-radius: 0; -fx-border-color: white;" text="Voir Statistiques" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font>
+         </Button>
+         <Button fx:id="historique" layoutX="4.0" layoutY="334.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="155.0" style="-fx-background-color: #FFA500; -fx-background-radius: 0; -fx-border-color: white;" text="Historique" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font>
+         </Button>
+         <Button fx:id="quitter_button" layoutX="4.0" layoutY="393.0" mnemonicParsing="false" onAction="#Deconnecter" prefHeight="59.0" prefWidth="155.0" style="-fx-background-color: #FFA500; -fx-background-radius: 0; -fx-border-color: white;" text="Deconnecter" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font>
+         </Button>
+      </children></Pane>
+   <Button fx:id="dialogbutton" layoutX="436.0" layoutY="440.0" mnemonicParsing="false" onAction="#openDialog" prefHeight="38.0" prefWidth="155.0" style="-fx-background-color: #FFA500; -fx-background-radius: 5;" text="Nouveau Planning" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+   <Button fx:id="ChoixPlanningButton" layoutX="260.0" layoutY="440.0" mnemonicParsing="false" onAction="#ChoisirPlanning" prefHeight="38.0" prefWidth="155.0" style="-fx-background-color: #FFA500; -fx-background-radius: 5;" text="Choisir un Planning" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+
+</AnchorPane>

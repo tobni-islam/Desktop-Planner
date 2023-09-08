@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="369.0" prefWidth="555.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tp.TacheDecomposableController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="139.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter Une Tache Decomposable" wrappingWidth="277.13000106811523">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="139.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deadline: " wrappingWidth="74.13000106811523" />
+      <ComboBox fx:id="getjour" layoutX="235.0" layoutY="68.0" prefWidth="150.0" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="140.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom de Task:" wrappingWidth="89.13000106811523" />
+      <TextField fx:id="getnom" alignment="CENTER" layoutX="235.0" layoutY="109.0" prefHeight="26.0" prefWidth="150.0" promptText="Task" />
+      <Text layoutX="140.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Duree:" wrappingWidth="59.130001068115234" />
+      <TextField fx:id="getduree" alignment="CENTER" layoutX="235.0" layoutY="148.0" prefHeight="26.0" prefWidth="150.0" promptText="hh:mm" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="142.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Periorite:" wrappingWidth="68.13000106811523" />
+      <ComboBox fx:id="getpriorite" layoutX="235.0" layoutY="189.0" prefWidth="150.0" />
+      <Text layoutX="139.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Categorie:" wrappingWidth="74.13000106811523" />
+      <ComboBox fx:id="getcategorie" layoutX="235.0" layoutY="232.0" prefWidth="150.0" />
+      <CheckBox fx:id="blocked" layoutX="134.0" layoutY="295.0" mnemonicParsing="false" text="Bloque le(s) creneau(x) pour cette tache" />
+      <Button fx:id="ajouter" layoutX="359.0" layoutY="329.0" mnemonicParsing="false" onAction="#AjouterTache" text="Ajouter la tache" />
+      <Button fx:id="retourbutton" layoutX="481.0" layoutY="329.0" mnemonicParsing="false" onAction="#NoButtonAction" text="Retour" />
+      <Label fx:id="jourError" layoutX="400.0" layoutY="72.0" prefHeight="18.0" prefWidth="134.0" textFill="#ee0404" />
+      <Label fx:id="nomError" layoutX="392.0" layoutY="113.0" prefHeight="18.0" prefWidth="134.0" textFill="#ee0404" />
+      <Label fx:id="dureeError" layoutX="392.0" layoutY="152.0" prefHeight="18.0" prefWidth="134.0" textFill="#ee0404" />
+      <Label fx:id="prioriteError" layoutX="392.0" layoutY="193.0" prefHeight="18.0" prefWidth="150.0" textFill="#ee0404" />
+      <Label fx:id="categorieError" layoutX="392.0" layoutY="236.0" prefHeight="18.0" prefWidth="150.0" textFill="#ee0404" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="latest">
+    <CLASSES>
+      <root url="file:///usr/lib/jvm/jdk-20-oracle-x64/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <NATIVE>
+      <root url="file:///usr/lib/jvm/jdk-20-oracle-x64/lib" />
+    </NATIVE>
+    <SOURCES>
+      <root url="file:///usr/lib/jvm/jdk-20-oracle-x64/lib" />
+    </SOURCES>
+    <jarDirectory url="file:///usr/lib/jvm/jdk-20-oracle-x64/lib" recursive="false" />
+    <jarDirectory url="file:///usr/lib/jvm/jdk-20-oracle-x64/lib" recursive="false" type="SOURCES" />
+  </library>
+</component>

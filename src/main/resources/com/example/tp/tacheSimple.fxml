@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="421.0" prefWidth="555.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tp.TacheSimpleController">
+   <children>
+      <Text layoutX="172.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter Une Tache Simple" wrappingWidth="218.22833251953125">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <TextField fx:id="getnom" alignment="CENTER" layoutX="249.0" layoutY="141.0" prefHeight="25.0" prefWidth="152.0" promptText="Task">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Text layoutX="131.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom de la tache :" />
+      <TextField fx:id="getduree" alignment="CENTER" layoutX="250.0" layoutY="177.0" prefHeight="25.0" prefWidth="152.0" promptText="hh:mm">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Text layoutX="131.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Duree:" />
+      <Button fx:id="ajouter" layoutX="345.0" layoutY="381.0" mnemonicParsing="false" onAction="#AjouterTache" text="Ajouter la tache" />
+      <Button fx:id="retourbutton" layoutX="480.0" layoutY="381.0" mnemonicParsing="false" onAction="#NoButtonAction" text="Retour" />
+      <Text layoutX="148.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text layoutX="123.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text layoutX="130.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Periorite :" />
+      <ComboBox fx:id="getpriorite" layoutX="250.0" layoutY="212.0" prefWidth="150.0" />
+      <Text layoutX="128.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Categorie :" />
+      <Text layoutX="135.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type :" />
+      <CheckBox fx:id="blocked" layoutX="129.0" layoutY="357.0" mnemonicParsing="false" text="Bloquer la tache pour ce creneau" />
+      <ComboBox fx:id="getcreneau" layoutX="251.0" layoutY="106.0" prefWidth="150.0" />
+      <Text layoutX="132.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Creneau :" />
+      <Text layoutX="134.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jour du planing :" />
+      <ComboBox fx:id="getjour" layoutX="250.0" layoutY="69.0" onAction="#fillcreneau" prefWidth="150.0" />
+      <RadioButton fx:id="periodique" layoutX="251.0" layoutY="287.0" mnemonicParsing="false" text="Periodique" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="123.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Periodicite :" wrappingWidth="75.33333333333326" />
+      <ComboBox fx:id="getcategorie" layoutX="250.0" layoutY="249.0" prefWidth="150.0" />
+      <Spinner fx:id="periodicite" layoutX="251.0" layoutY="316.0" />
+      <Label />
+      <Label fx:id="jourError" layoutX="413.0" layoutY="73.0" prefHeight="18.0" prefWidth="140.0" textFill="#e41414" />
+      <Label fx:id="creneauError" layoutX="413.0" layoutY="110.0" prefHeight="18.0" prefWidth="140.0" textFill="#f80b0b" />
+      <Label fx:id="dureeError" layoutX="413.0" layoutY="181.0" prefHeight="18.0" prefWidth="140.0" textFill="#fc0000" />
+      <Label fx:id="nomError" layoutX="410.0" layoutY="141.0" prefHeight="26.0" prefWidth="140.0" textFill="#fc0303" />
+      <Label fx:id="perioriteError" layoutX="413.0" layoutY="216.0" prefHeight="18.0" prefWidth="140.0" textFill="#dd0606" />
+      <Label fx:id="categorieError" layoutX="413.0" layoutY="253.0" prefHeight="18.0" prefWidth="140.0" textFill="#e41111" />
+   </children>
+</AnchorPane>

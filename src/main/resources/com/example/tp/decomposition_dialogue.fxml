@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="252.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tp.DecompositionDialogueController">
+   <children>
+      <Label alignment="CENTER" layoutX="8.0" layoutY="32.0" prefHeight="28.0" prefWidth="422.0" text="Cette tache decomposable ne peut pas etre planifier">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="20.0" layoutY="60.0" prefHeight="28.0" prefWidth="399.0" text="sur un seul creneau.">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="20.0" layoutY="105.0" prefHeight="28.0" prefWidth="399.0" text="une decomposition a ete effectue par le systeme.">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="DecompositionButton" layoutX="137.0" layoutY="173.0" mnemonicParsing="false" onAction="#OnDecompositionClick" prefHeight="40.0" prefWidth="165.0" text="Voir decomposition">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

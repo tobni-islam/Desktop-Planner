@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: fff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tp.HelloController">
+   <children>
+      <Pane layoutX="28.0" layoutY="156.0" prefHeight="226.0" prefWidth="322.0" style="-fx-border-color: #FFA500; -fx-border-radius: 20; -fx-background-color: fff; -fx-background-radius: 20;">
+         <children>
+            <TextField fx:id="input_pseudo" layoutX="68.0" layoutY="68.0" prefHeight="25.0" prefWidth="187.0" promptText="Pseudo" style="-fx-border-radius: 20; -fx-background-radius: 20;" />
+            <Button fx:id="ConnecterButton" layoutX="161.0" layoutY="116.0" mnemonicParsing="false" onAction="#onHelloButtonClick" prefHeight="29.0" prefWidth="109.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 0.2; -fx-border-radius: 50;" text="Se Connecter" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Text layoutX="106.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom d'utilisateur : ">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnOpenDialog" layoutX="68.0" layoutY="116.0" mnemonicParsing="false" onAction="#openDialog" prefHeight="29.0" prefWidth="80.0" style="-fx-background-color: #FFA500;" text="S'inscrire" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="errorlabel" layoutX="92.0" layoutY="171.0" textFill="RED" />
+         </children>
+      </Pane>
+      <Text layoutX="149.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Text>
+      <Pane layoutX="378.0" prefHeight="500.0" prefWidth="322.0" style="-fx-background-color: #7B3F7F;">
+         <children>
+            <Text fill="WHITE" layoutX="75.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome To" wrappingWidth="187.00000000000006">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="32.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Desktop Planner">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Button fx:id="quitter_button" layoutX="28.0" layoutY="442.0" mnemonicParsing="false" onAction="#stop_programme" prefHeight="29.0" prefWidth="80.0" style="-fx-background-color: #FFA500;" text="Quitter" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

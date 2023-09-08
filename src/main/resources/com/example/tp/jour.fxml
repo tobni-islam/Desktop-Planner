@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="645.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tp.JourController">
+   <children>
+      <Button fx:id="modifierButton" layoutX="531.0" layoutY="72.0" mnemonicParsing="false" onAction="#ModifierTache" prefHeight="36.0" prefWidth="100.0" text="Modifier">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="etablirButton" layoutX="531.0" layoutY="123.0" mnemonicParsing="false" onAction="#EtablirEtatTache" prefHeight="36.0" prefWidth="100.0" text="Etablir">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="supprimerButton" layoutX="531.0" layoutY="175.0" mnemonicParsing="false" onAction="#SupprimerTache" prefHeight="36.0" prefWidth="100.0" text="Supprimer">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="tacheTitre" alignment="CENTER" layoutX="55.0" layoutY="14.0" prefHeight="36.0" prefWidth="403.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="listTaches" layoutX="14.0" layoutY="64.0" prefHeight="342.0" prefWidth="504.0">
+        <columns>
+          <TableColumn fx:id="nomColumn" prefWidth="100.0" text="Nom" />
+            <TableColumn fx:id="heuredebutColumn" prefWidth="85.0" text="Heure debut" />
+            <TableColumn fx:id="heurefinColumn" prefWidth="85.0" text="Heure fin" />
+            <TableColumn fx:id="categorieColumn" prefWidth="73.0" text="Categorie" />
+            <TableColumn fx:id="proiriteColumn" prefWidth="75.0" text="Proirite" />
+            <TableColumn fx:id="etatColumn" prefWidth="85.0" text="Etat" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
